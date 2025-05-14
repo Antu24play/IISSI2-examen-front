@@ -7,15 +7,15 @@ La aplicación está desarrollada en **React Native** y se conecta con una API R
 
 Aquí se listan los repositorios relacionados con el proyecto:
 
-- 🔗 [Backend del proyecto](https://github.com/usuario/backend-repo)
-- 🔗 [Frontend del proyecto (este repo)](https://github.com/Antu24play/IISSI2-examen-front)
-- 🔗 [Repositorio GitMiner (microservicio)](https://github.com/usuario/gitminer)
+- 🔗 [Lab4](https://github.com/IISSI2-IS-2025/DeliverUS-Lab-4)
+- 🔗 [Lab5](https://github.com/IISSI2-IS-2025/DeliverUS-Lab-5)
+- 🔗 [Lab6](https://github.com/IISSI2-IS-2025/DeliverUS-Lab-6)
+- 🔗 [Lab7](https://github.com/IISSI2-IS-2025/DeliverUS-Lab-7)
+- 🔗 [Lab8](https://github.com/IISSI2-IS-2025/DeliverUS-Lab-8)
 
-> 🔄 Puedes añadir o modificar los enlaces según necesites.
 
 ## 🚀 Instrucciones para ejecutar el proyecto
 
 ```bash
-npm install
-npm start
+npm run install:all:win
 
