@@ -12,6 +12,11 @@ Aquí se listan los repositorios relacionados con el proyecto:
 - 🔗 [Lab6](https://github.com/IISSI2-IS-2025/DeliverUS-Lab-6)
 - 🔗 [Lab7](https://github.com/IISSI2-IS-2025/DeliverUS-Lab-7)
 - 🔗 [Lab8](https://github.com/IISSI2-IS-2025/DeliverUS-Lab-8)
+- 🔗 [Proyecto customer](https://github.com/Antu24play/proyecto-de-curso-fxy9053)
+- 🔗 [Promociones](https://github.com/Antu24play/examenes-iissi2-frontend-promociones)
+- 🔗 [Octubre 2024: este no es muy util](https://github.com/Antu24play/Examen-octubre-2024)
+- 🔗 [Performances Importante](https://github.com/Antu24play/Performance)
+- 🔗 [forwardBackWar Importante](https://github.com/Antu24play/forwardBackwar)
 
 
 ## 🚀 Instrucciones para ejecutar el proyecto
