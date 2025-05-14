@@ -1,4 +1,4 @@
-# IISSI2 - Proyecto Examen (Frontend)
+# IISSI2 - Examen (Frontend)
 
 Este repositorio contiene el frontend del proyecto de examen para la asignatura **IISSI2**.  
 La aplicación está desarrollada en **React Native** y se conecta con una API RESTful.
