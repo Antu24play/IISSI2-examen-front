@@ -14,11 +14,13 @@ import DeleteModal from '../../components/DeleteModal'
 import restaurantLogo from '../../../assets/restaurantLogo.jpeg'
 import { API_BASE_URL } from '@env'
 import { patch } from '../../api/helpers/ApiRequestsHelper'
+import ConfirmationModal from '../../components/ConfirmationModal'
 
 export default function RestaurantsScreen ({ navigation, route }) {
   const [restaurants, setRestaurants] = useState([])
   const [restaurantToBeDeleted, setRestaurantToBeDeleted] = useState(null)
   const { loggedInUser } = useContext(AuthorizationContext)
+  const [restaurantToBePinned, setRestaurantToBePinned] = useState(null)
 
   useEffect(() => {
     if (loggedInUser) {
@@ -79,7 +81,7 @@ export default function RestaurantsScreen ({ navigation, route }) {
             </TextRegular>
           </View>
         </Pressable>
-        <Pressable onPress={ () => { pinnedRestaurant(item) }}>
+        <Pressable onPress={ () => { setRestaurantToBePinned(item) }}>
         <MaterialCommunityIcons
           name={item.pinnedAt ? 'pin' : 'pin-outline'}
           color={GlobalStyles.brandSecondaryTap}
@@ -166,6 +168,7 @@ export default function RestaurantsScreen ({ navigation, route }) {
     try {
       await togglePinned(restaurant.id)
       await fetchRestaurants()
+      setRestaurantToBePinned(null)
       showMessage({
         message: `Restaurant ${restaurant.name} succesfully pinned`,
         type: 'success',
@@ -200,6 +203,13 @@ export default function RestaurantsScreen ({ navigation, route }) {
         <TextRegular>The products of this restaurant will be deleted as well</TextRegular>
         <TextRegular>If the restaurant has orders, it cannot be deleted.</TextRegular>
     </DeleteModal>
+    <ConfirmationModal
+    isVisible={restaurantToBePinned !== null}
+      onCancel={() => setRestaurantToBePinned(null)}
+      onConfirm={() => pinnedRestaurant(restaurantToBePinned)}>
+        <TextRegular>El producto cambiara de pineado a no ìneado o vicebersa</TextRegular>
+        <TextRegular>Estás seguro que lo quieres cambiar</TextRegular>
+      </ConfirmationModal>
     </>
   )
 }
